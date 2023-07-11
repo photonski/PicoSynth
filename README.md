@@ -1,3 +1,5 @@
+# **CURRENT BUILD NOT FUNCTIONAL - WORK IN PROGRESS**
+
 # PicoSynth
 Synthesizer on Pi Pico (RP2040) - CircuitPython
 
