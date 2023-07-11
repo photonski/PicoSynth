@@ -14,9 +14,9 @@ import adafruit_ssd1306
 attack_pot = analogio.AnalogIn(board.GP26)
 decay_pot = analogio.AnalogIn(board.GP27)
 sustain_pot = analogio.AnalogIn(board.GP28)
-release_pot = analogio.AnalogIn(board.GP29)
-pitch_pot = analogio.AnalogIn(board.GP30)
-volume_pot = analogio.AnalogIn(board.GP4)
+release_pot = analogio.AnalogIn(board.GP22)
+pitch_pot = analogio.AnalogIn(board.GP21)
+volume_pot = analogio.AnalogIn(board.GP20)
 
 # Initialize the switches
 play_continuous_switch = digitalio.DigitalInOut(board.GP2)
@@ -51,7 +51,7 @@ SAMPLE_RATE = 22050  # Adjust this based on your preference
 BUFFER_SIZE = 128
 
 # Initialize the audio output
-audio = audioio.AudioOut(board.GP22)
+audio = audioio.AudioOut(board.GP0)
 
 # Initialize the display
 i2c = board.I2C()
