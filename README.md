@@ -6,28 +6,27 @@ This was made specifically for the Raspberry Pi Pico (rp2040)
 
 **Necessary Connections:**
 
-1. Connect the potentiometers:
-   - Connect the attack potentiometer's middle pin to GP26 on the Raspberry Pi Pico. Connect one of its outer pins to 3.3V, and the other outer pin to GND.
-   - Connect the decay potentiometer in the same way, with its middle pin connected to GP27.
-   - Connect the sustain potentiometer in the same way, with its middle pin connected to GP28.
-   - Connect the release potentiometer in the same way, with its middle pin connected to GP29.
-   - Connect the pitch potentiometer in the same way, with its middle pin connected to GP30.
-   - Connect the volume potentiometer in the same way, with its middle pin connected to GP4.
+    Connect the potentiometers:
+        Connect the attack potentiometer's middle pin to GP26 on the Raspberry Pi Pico. Connect one of its outer pins to 3.3V, and the other outer pin to GND.
+        Connect the decay potentiometer in the same way, with its middle pin connected to GP27.
+        Connect the sustain potentiometer in the same way, with its middle pin connected to GP28.
+        Connect the release potentiometer in the same way, with its middle pin connected to GP22.
+        Connect the volume potentiometer in the same way, with its middle pin connected to GP21.
 
-2. Connect the switches:
-   - Connect one side of the play_continuous switch to GP2, and the other side to GND.
-   - Connect one side of the play_staccato switch to GP3, and the other side to GND.
-   - Connect one side of the shift button to GP21, and the other side to GND.
+    Connect the switches:
+        Connect one side of the play_continuous switch to GP2, and the other side to GND.
+        Connect one side of the play_staccato switch to GP3, and the other side to GND.
+        Connect one side of the shift button to GP20, and the other side to GND.
 
-3. Connect the SSD1306 display:
-   - Connect the display's SDA pin to GP8 on the Raspberry Pi Pico.
-   - Connect the display's SCL pin to GP9 on the Pico.
-   - Connect the display's VCC pin to 3.3V.
-   - Connect the display's GND pin to GND.
+    Connect the SSD1306 display:
+        Connect the display's SDA pin to GP8 on the Raspberry Pi Pico.
+        Connect the display's SCL pin to GP9 on the Pico.
+        Connect the display's VCC pin to 3.3V.
+        Connect the display's GND pin to GND.
 
-4. Connect the audio output:
-   - Connect a speaker or audio amplifier to the GP22 pin on the Raspberry Pi Pico.
-
+    Connect the audio output:
+        Connect a speaker or audio amplifier to the GP0 pin on the Raspberry Pi Pico.
+        
 Make sure you have the necessary components, such as potentiometers, switches, SSD1306 display module, and speaker or audio amplifier, to establish the connections.
 
 Once you have made these connections, you can upload the code to your Raspberry Pi Pico running CircuitPython, and your digital instrument should be ready to use with the display showing the parameter values.
