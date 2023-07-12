@@ -1,0 +1,21 @@
+* Action plan for functional development
+
+1. Identify all hardware to be used, external and internal
+  *  import those libraries, and initialize any necessary components via variables & indexes (assigning i2c, ADC, etc.)
+2. Define Constants and Variables
+  * modulation range?, note frequencies?, keycodes?, sample rate?, buffer size?, ssd1306 display state?
+3. Map any necessary hardware to the variable it is going to effect
+    * one potentiometer for each segment of envelope? a pot per wave signal generator output?
+4. Generate a sample
+    * using the inputs from pots/switches/buttons, use those vars to adjust the sample ("processing") - if using a display, update screen with variable data that is applied to the current sample
+5. Play the note
+    * set note frequency? take modified audio sample and output
+
+* Main Loop
+continuously update values from potentiometers/switches/buttons
+save a sample state
+output sample state
+clear sample state
+update display
+
+short sleep to protect CPU
